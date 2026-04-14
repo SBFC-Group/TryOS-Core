@@ -157,6 +157,10 @@
     <Compile Include="Console.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CustomControl\CustomController.vb" />
+    <Compile Include="CustomControl\CustomController_Handler.vb" />
+    <Compile Include="CustomControl\CustomController_Interface.vb" />
+    <Compile Include="CustomControl\CustomController_UI_Handler.vb" />
     <Compile Include="Data Formater.Designer.vb">
       <DependentUpon>Data Formater.vb</DependentUpon>
     </Compile>

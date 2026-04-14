@@ -5,6 +5,9 @@ Public Class UI
     Public WallpaperFolder As String = My.Application.Info.DirectoryPath & "\Wallpapers"
     Public UsersFolder As String = My.Application.Info.DirectoryPath & "\Users"
 
+    Public AllowOnlyVerifyedShellCode As Boolean = False
+    Public NeedThat As Int64 = 1
+
     'The User that is logged in's Folder
     Public UserFolder As String = My.Application.Info.DirectoryPath & "\Users\"
 

@@ -21,6 +21,18 @@
             Dev = True
         End If
 
+        If args.Contains("/TurnOff_VerifyedShellOnly") = True Then
+            UI.AllowOnlyVerifyedShellCode = False
+        End If
+
+
+
+        If UI.AllowOnlyVerifyedShellCode = False Then
+            If UI.NeedThat = 1 Then
+                UI.ShowError("Your running in an unsafe mode. Close the program if you don't know what you're doing.", ErrorMSGBox.Alerts.Information)
+            End If
+        End If
+
         If args.Contains("/ShowConsole") = True Then
             Console.Show()
             Console.WindowState = FormWindowState.Minimized
